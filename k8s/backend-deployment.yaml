@@ -22,7 +22,8 @@ spec:
       containers:
       - name: backend
         # In a real environment, ArgoCD updates this image tag automatically
-        image: myregistry/cryptopredict-backend:latest
+        image: ml-ops-backend:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
         env:

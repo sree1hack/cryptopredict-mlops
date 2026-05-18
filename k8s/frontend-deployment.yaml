@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: myregistry/cryptopredict-frontend:latest
+        image: ml-ops-frontend:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
         env:
